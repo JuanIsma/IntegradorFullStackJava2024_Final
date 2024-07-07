@@ -1,0 +1,173 @@
+ 
+
+
+section {
+    display: flex;
+    /* Utiliza el modelo de caja flexible */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+    height: 90vh;
+    /* Hace que el elemento ocupe el 100% de la altura de la ventana del navegador */
+    width: 100%;
+    /* Establece el ancho del elemento al 95% del ancho del contenedor padre */
+    padding: 10px;
+    /* Añade relleno de 10 píxeles en todas las direcciones */
+    padding-top: 5rem;
+    
+}
+
+
+.formulario {
+    background:-webkit-linear-gradient(top, black,  #7e0e29, black); 
+    width: 55vh;
+    /* Ajusta el ancho según tu preferencia */
+    padding: 7vh;
+    height: 70%;
+     border: 1px solid #ccc;  
+    border-radius: 1vh;
+    text-align: center;
+    margin: auto;
+    /* Centra horizontalmente */
+    /* Tamaño del degradado (puedes ajustarlo según tus necesidades) */
+    /* background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.9), rgba(12, 12, 12, 0.9)); */
+    /* Define el degradado de colores */
+}
+
+
+
+.iniciarSesion {
+  
+    border-radius: 1px;
+    padding: 22px;
+    width: 480px;
+    height: 20px;
+    text-align: center;
+    color: #ccc;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#ayuda {
+    color: #e2f10c;
+}
+
+
+#crearCuenta {
+    color: #ccc;
+    font-size: 20px;
+ 
+    font-family: Arial, Helvetica, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.formulario input[type="email"],
+.formulario input[type="password"] {
+    margin-bottom: 20px;
+    /* Espacio entre los elementos */
+    display: block;
+    /* Mostrar los elementos en una línea separada */
+    width: 100%;
+    /* Los elementos ocupan todo el ancho disponible */
+    padding: 4px;
+    /* Espacio interior de los elementos */
+    font: normal 12px/normal Verdana, Geneva, sans-serif;
+    border-radius: 10px;
+    border: 2px solid #048bd4;
+
+}
+
+
+/* Estilo para los elementos del formulario */
+.formulario input[type="text"],
+.formulario input[type="text2"],
+.formulario input[type="text3"],
+.formulario input[type="text4"] {
+
+    margin-bottom: 10px;
+    /* Espacio entre los elementos */
+    display: block;
+    /* Mostrar los elementos en una línea separada */
+    width: 100%;
+    /* Los elementos ocupan todo el ancho disponible */
+    padding: 5px;
+    /* Espacio interior de los elementos */
+    font: normal 12px/normal Verdana, Geneva, sans-serif;
+    border-radius: 10px;
+    border: 2px solid #048bd4;
+}
+
+
+.formulario input[type="date"] {
+    margin-bottom: 10px;
+    /* Espacio entre los elementos */
+    display: block;
+    /* Mostrar los elementos en una línea separada */
+    width: 50%;
+    /* Los elementos ocupan todo el ancho disponible */
+    padding: 5px;
+    /* Espacio interior de los elementos */
+    font: normal 12px/normal Verdana, Geneva, sans-serif;
+    border-radius: 10px;
+    border: 2px solid #048bd4;
+}
+
+
+.formulario input[type="submit"]:hover {
+ background-color:  #296e53;
+}
+
+.formulario input[type="submit"] {
+    width: 82%;
+    display: block;
+    padding: 15px;
+ background-color: #1a5f44;
+    font: bold 12px/normal Verdana, Geneva, sans-serif;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    color: beige;
+
+
+}
+
+
+select {
+    margin-bottom: 10px;
+    /* Espacio entre los elementos */
+    display: block;
+    /* Mostrar los elementos en una línea separada */
+    width: 25%;
+    /* Los elementos ocupan todo el ancho disponible */
+    padding: 5px;
+    /* Espacio interior de los elementos */
+    font: normal 12px/normal Verdana, Geneva, sans-serif;
+    border-radius: 10px;
+    border: 2px solid #048bd4;
+}
+
+/* Estilos para el formulario de registro */
+.campo {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 100%; 
+}
+
+.error {
+    color: #fff; 
+    font-size: 12px; 
+}
+
+.oculto {
+    display: none;
+}
+
+#textoCheck{
+    color: #ccc;
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+  }

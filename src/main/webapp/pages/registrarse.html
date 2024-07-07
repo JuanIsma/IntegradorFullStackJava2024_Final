@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Registrarse</title>
+    <link href="../css/styleRegistro.css" rel='stylesheet'/>
+    <link href="../css/styles.css" rel='stylesheet'/>
+</head>
+
+<body class="sinScroll">
+    <header class="header">
+        <ul>  
+            <a class="moving-text">
+                <i class="bi bi-film"></i>
+                <span class="Zona-Films  ">Zona-Films</span> 
+               </a>
+            <li><a href="../index.html"  class="button-link">Página Inicial</a></li>
+            </ul>
+    </header>
+
+  
+    <main class="main">
+        <section class="seccionRegistrarse">
+            <form class="formulario" id="formularioR" action="../RegistrarUsuarioServlet" method="post">
+              
+             
+                <h1 id="crearCuenta">Crea una Cuenta</h1><br><br><br>
+                
+                <div class="campo">
+                    <input type="text" placeholder="Nombre" id="nombre" name="nombre">
+                    <div id="nombre-error" class="error"></div>
+                </div>
+                <div class="campo">
+                    <input type="text" placeholder="Apellido" id="apellido" name="apellido">
+                    <div id="apellido-error" class="error"></div>
+                </div>
+                <div class="campo">
+                    <input type="text" placeholder="Email" id="email" name="email">
+                    <div id="email-error" class="error"></div>
+                </div>
+                <div class="campo">
+                    <input type="password" placeholder="Contraseña" id="password" name="password">
+                    <div id="password-error" class="error"></div>
+                </div>
+                <div class="campo">
+                    <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" id="fechaNacimiento" name="fechaNacimiento">
+                    <div id="fechaNacimiento-error" class="error"></div>
+                </div>
+                <div class="campo">
+                    <select name="pais" id="pais">
+                        <option value="">País</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CH">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                    <div id="pais-error" class="error"></div>
+                </div>
+                <div class="terminos">
+                    <input class="check" type="checkbox" id="terminos" name="terminos"  value=1>
+                    <label id ="textoCheck" class="textoCheck" for="terminos">Acepto términos y condiciones</label>
+                    <div id="terminos-error" class="error"></div>
+                </div>
+                <div>
+            <input class="boton" type="submit" value="Registrarse">
+        </div>
+        <div>
+            <a id="ayuda" href="registrarse.html#">Necesitas ayuda?</a>
+        </div>
+
+   
+    </form>
+</section>
+</main>
+  
+<script src="../javaScripts/scriptValidaRegister.js"></script>
+</body>
+</html>

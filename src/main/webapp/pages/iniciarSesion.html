@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Inicio</title>
+    <link href="../css/styleRegistro.css" rel='stylesheet' />
+    <link href="../css/styles.css" rel='stylesheet' />
+    <link href="../css/cssForm.css" rel='stylesheet' />
+</head>
+
+<body class="sinScroll">
+    <!-- Encabezado de pagina -->
+    <header class="header ">
+        <ul >
+            <a class="moving-text">
+                <i class="bi bi-film"></i>
+                <span class="Zona-Films  ">Zona-Films</span> 
+               </a>
+            <li><a href="../index.html" class="button-link">Página Inicial</a></li>
+        </ul>
+    </header>
+
+
+    <main id="main" class="main">
+        <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
+
+            <form class="formulario" id="formulario" action="" method="get">
+                <span class="fa--user-circle-o"></span> <!-- Icono login -->
+
+                <h2 class="iniciarSesion">Iniciar Sesión</h2>
+                <div class="campo">
+                    <input type="email" placeholder="Correo electrónico" id="email" name="email">
+                    <div id="email-error"  class="error"></div>
+                </div>
+                
+                <div class="campo">
+                    <input type="password" placeholder="Contraseña" id="password" name="password">
+                    <div id="password-error"  class="error"></div>
+                </div>
+                <div>
+                    <input class="boton" type="submit" value="Iniciar Sesión">
+                </div>
+                <div>
+
+
+                    <a id="ayuda" href="registrarse.html">Registrarse</a>
+                </div>
+            </form>
+        </section>
+        </div>
+    </main>
+ 
+    <script src="../javaScripts/scriptValidaLogin.js"></script>
+</body>
+
+</html>

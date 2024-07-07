@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Inicio</title>
+    <link href="../css/styleRegistro.css" rel='stylesheet' />
+    <link href="../css/styles.css" rel='stylesheet' />
+        <link href="../css/cssForm.css" rel='stylesheet' />
+        
+        <style>
+           <!-- estilo css para error -->
+        .error {   
+        color: #ffffff;
+             }
+        </style>
+</head>
+
+
+<body class="sinScroll">
+ 
+    <main id="main" class="main">
+        <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
+            <!--pongo get ya que en github pages da error el method post-->
+            <form  class="formulario" id="formulario"  action="../LoginAdminServlet" method="post">
+                
+           
+                <span class="fa--user-circle-o"></span> <!-- Icono login -->
+                
+                <h2 class="iniciarSesion">Administrador</h2>
+                <div class="campo">
+                    <input type="email" placeholder="Correo electrónico" id="email" name="email" required>
+                    <div id="email-error"  class="error"></div>
+                </div>
+                
+                <div class="campo">
+                    <input type="password" placeholder="Contraseña" id="password" name="password" required>
+                    <div id="password-error"  class="error"></div>
+                </div>
+                <div>
+                    <input class="boton" type="submit" value="Iniciar Panel">
+                </div>
+                <div>
+ 
+                </div>
+                   <!-- Div par error  -->
+                  <div id="login-error" class="error"></div>
+            </form>
+                 
+        </section>
+        
+        </div>
+    </main>
+    
+    
+    <script>
+    // --------------- INICIO del Script ----------------    
+    // Verificar si hay un parámetro de error en la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.has('error')) {
+        document.getElementById('login-error').textContent = "Usuario o contraseña incorrectos";
+    }
+    // --------------- FIN del Script -------------------
+    </script>
+          
+        
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+ 
+    <script src="../javaScripts/scriptValidaLogin.js"></script>
+</body>
+
+</html>
